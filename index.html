@@ -6,6 +6,7 @@
   <title>Sarth Book Center</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  
   <!-- Add AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -42,30 +43,42 @@
 <section id="categories" data-aos="zoom-in"> ... </section>
 
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Sarth Book Center is dedicated to serving readers and learners with a rich collection of books in multiple genres. Whether you’re looking for school textbooks, novels, or regional literature, we have something for every reader.
-    </p>
-  </section>
+<section id="about" data-aos="fade-up">
+  <h2>📖 About Us</h2>
+  <p>
+    We bring books closer to you — from fiction to self-help, regional stories, and competitive exam guides. 
+    At <b>Sarth Book Center</b>, reading meets passion 📚✨
+  </p>
+</section>
 
-  <section id="categories">
-    <h2>Book Categories</h2>
-    <ul>
-      <li>📘 Educational Books</li>
-      <li>📗 Fiction & Non-Fiction</li>
-      <li>📙 Children's Books</li>
-      <li>📕 Marathi & Regional Literature</li>
-      <li>📒 Competitive Exam Books</li>
-      <li>📚 Spiritual & Self-Help</li>
-    </ul>
-  </section>
+<section id="categories" data-aos="fade-up">
+  <h2>📚 Book Categories</h2>
+  <div class="categories-grid">
+    <div class="cat-card" data-aos="zoom-in">
+      <h3>🎓 Educational</h3>
+      <p>Textbooks, reference materials, and guides for all levels.</p>
+    </div>
+    <div class="cat-card" data-aos="zoom-in">
+      <h3>📘 Fiction</h3>
+      <p>Stories that take you to another world of imagination.</p>
+    </div>
+    <div class="cat-card" data-aos="zoom-in">
+      <h3>📗 Self-Help</h3>
+      <p>Books to help you grow mentally, emotionally, and spiritually.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-  <h2>Contact Us</h2>
-  <p>📍 Address: RK Puram</p>
-  <p>📞 Phone: 9528055151</p>
-  <p>📧 Email: saxenaayush2809@gmail.com</p>
+<section id="contact" data-aos="fade-up">
+  <h2>📞 Contact Us</h2>
+  <form action="https://formspree.io/f/xzbljklp" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
 
   <!-- 📩 Contact Form -->
   <form action="https://formspree.io/f/xzbljklp" method="POST" style="margin-top: 20px;">
@@ -90,7 +103,7 @@
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({ duration: 1200, once: true });
 </script>
 
 </body>

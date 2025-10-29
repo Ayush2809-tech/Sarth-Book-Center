@@ -30,31 +30,83 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* HERO SECTION */
+/* 🌄 Hero Section Styling */
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
   text-align: center;
-  background-color: #e0e0e0;
-  padding: 60px 20px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1500&q=80") no-repeat center center/cover;
+  color: white;
   border-radius: 8px;
-  margin: 20px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
 }
 
 .hero h1 {
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.hero h1 span {
+  color: #ffd700; /* Golden accent */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f8f8f8;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #3e4a61;
-  color: white;
+  padding: 12px 24px;
+  background-color: #ffd700;
+  color: #333;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #2c364a;
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* 📚 Book Gallery Section */
+.book-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.book-gallery img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.book-gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* CONTENT SECTIONS */

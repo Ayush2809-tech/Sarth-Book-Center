@@ -101,3 +101,4 @@ footer {
     padding: 20px;
   }
 }
+[data-aos] { opacity: 0; transform: translateY(10px); }
